@@ -7,8 +7,8 @@ Welcome to group-manual's documentation!
 ========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :glob:
 
 
 
