@@ -10,19 +10,16 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
 
+sys.path.insert(0, os.path.abspath("../.."))
 
 # -- Project information -----------------------------------------------------
 
-project = 'group-manual'
-copyright = '2022, Prof. Michael A. Webb'
-author = 'Prof. Michael A. Webb'
-
-# The full version, including alpha/beta/rc tags
-release = '0.0'
+project = "acsmarm"
+copyright = "2022, Michael A. Webb"
+author = "Prof. Michael A. Webb"
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,6 +28,7 @@ release = '0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "myst_nb",
     "sphinx.ext.intersphinx",
     "sphinx.ext.githubpages",
 ]
@@ -40,7 +38,7 @@ extensions = [
 autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -63,7 +61,32 @@ html_context = {
     "commit": False,
 }
 
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ["_static"]
+
+
+autosectionlabel_prefix_document = True
+add_module_names = False
+
+intersphinx_mapping = {
+    "tf": (
+        "https://www.tensorflow.org/api_docs/python",
+        "https://github.com/mr-ubik/tensorflow-intersphinx/raw/master/tf2_py_objects.inv",
+    ),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "selfies": ("https://selfies.readthedocs.io/en/latest/", None),
+}
+
+master_doc = "toc"
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "html_image",
+]
+myst_url_schemes = ["http", "https", "mailto"]

@@ -1,4 +1,4 @@
-Webb Theory & Simulation Group Manual
+TEMPORARY HEADLINE
 ================
 
 ```{include} ../../README.md
