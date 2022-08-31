@@ -10,7 +10,7 @@ Welcome to group-manual's documentation!
    :maxdepth: 1
    :glob:
 
-   index.md
+   includeme.md
 
 Indices and tables
 ==================
