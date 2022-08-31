@@ -5,4 +5,4 @@ TEMPORARY
     :maxdepth: 1
     :glob:
 
-    include.md
+    index.md
