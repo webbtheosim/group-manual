@@ -31,7 +31,6 @@ release = '0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "myst_nb",
     "sphinx.ext.intersphinx",
     "sphinx.ext.githubpages",
 ]
