@@ -4,6 +4,31 @@
    "cell_type": "markdown",
    "id": "dcd4bc1c",
    "metadata": {},
+   "source": [
+    "# THE GROUP"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9ed50f47",
+   "metadata": {},
+   "source": [
+    "## This heading\n",
+    "such and such\n",
+    "\n",
+    "### this part\n",
+    "discuss a\n",
+    "\n",
+    "### that part\n",
+    "discuss b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "38f7ac6a",
+   "metadata": {},
+   "outputs": [],
    "source": []
   }
  ],
