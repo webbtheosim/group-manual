@@ -1,4 +1,4 @@
-TEMPORARY HEADLINE
+TABLE OF CONTENTS
 ================
 
 ```{include} ../../README.md
