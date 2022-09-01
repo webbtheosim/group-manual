@@ -1,4 +1,4 @@
-TEMPORARY
+TABLE OF CONTENTS
 ==============
 
 .. toctree::

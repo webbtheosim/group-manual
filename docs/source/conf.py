@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 
 # -- Project information -----------------------------------------------------
 
-project = "acsmarm"
+project = "Webb Group Manual"
 copyright = "2022, Michael A. Webb"
 author = "Prof. Michael A. Webb"
 
