@@ -6,3 +6,4 @@ TABLE OF CONTENTS
     :glob:
 
     index.md
+    GROUP/content.ipynb
