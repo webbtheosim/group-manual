@@ -1,4 +1,4 @@
-TABLE OF CONTENTS
+OVERVIEW
 ================
 
 ```{include} ../../README.md
