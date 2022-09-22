@@ -9,4 +9,4 @@ TABLE OF CONTENTS
     GROUP/content.ipynb
     READING/content.ipynb
     COMPUTING/content.ipynb
-    EXERCSISES/content.ipynb
+    EXERCISES/content.ipynb
