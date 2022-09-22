@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview &mdash; Webb Group Manual  documentation</title>
+  <title>EXERCISES &mdash; Webb Group Manual  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/mystnb.css" type="text/css" />
@@ -27,7 +27,8 @@
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="COMPUTING RESOURCES" href="../COMPUTING/content.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,11 +46,22 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">OVERVIEW</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../GROUP/content.html">THE GROUP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../READING/content.html">RELEVANT READING</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../COMPUTING/content.html">Computing Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../COMPUTING/content.html">COMPUTING RESOURCES</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EXERCISES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#philosophy">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-fundamentals-of-molecular-simulation">A. Fundamentals of Molecular Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#task-1-monte-carlo-simulation-of-a-lennard-jones-fluid">Task 1. Monte Carlo Simulation of a Lennard-Jones Fluid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid">Task 2. Molecular Dynamics Simulation of a Lennard-Jones Fluid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software">Task 3. Simulation of a Lennard-Jones Fluid with an MD software</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#b-fundamentals-of-machine-learning">B. Fundamentals of Machine Learning</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -66,7 +78,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../toc.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Overview</li>
+      <li>EXERCISES</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/webbtheosim/group-manual/blob/main/site/source/EXERCISES/content.ipynb" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -76,8 +88,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercises">
+<h1>EXERCISES<a class="headerlink" href="#exercises" title="Permalink to this heading"></a></h1>
+<section id="philosophy">
+<h2>Philosophy<a class="headerlink" href="#philosophy" title="Permalink to this heading"></a></h2>
 <p>All graduate students in the group will be “forced” to engage in a series of exercises related to molecular simulation before really getting started in “real research.” Series A focuses on molecular simulation, and Series B (yet-to-be-developed) focuses on machine learning. The primary purpose of these exercises is to expose students to essential elements in these disciplines and provide a firm foundation to understand literature and pursue research in the area. Interested prospective students may also elect to try out these exercises, prior to joining the group, to gauge interest in computational research (although admittedly, these are not the sexiest of topics!) or to get a headstart in research in the group (by timeshifting these exercises from early spring  after matriculation to sometime in the first semester/winter break).</p>
 <p><strong>Note on implementation</strong>: In terms of programming language, you can use whatever you want. Even if slow, the simulations can be feasibly accomplished using interpreted languages. As a first recommendation, I would probably recommend Python for both series. However, for Series A, it would also be quite reasonable and worthwhile to write some programs in <em>C</em> or <em>FORTRAN</em>, and perhaps you could perform analysis in Python. Using a compiled language forces you to think more about some mechanical aspects of algorithm implementation and coding, in general, that can pay dividends. It is also possible to write some routines in a compiled language to accelerate an overarching Python code. Jupyter notebooks or powerpoint slides are a good way to share your results.</p>
 <p><strong>Note on resources</strong>: Most of these tasks can be found as examples in textbooks or courses, and so it would be very easy to copy the code from a relevant resource. Use whatever resources you want (<strong>FS</strong>, <strong>AT</strong>, <a class="reference external" href="https://sites.engineering.ucsb.edu/~shell/che210d/">Shell course</a>), but in a marked exception from my typical coding hierarchy of importance, in this instance, you <em>must</em> understand what the the code is doing and what the algorithms are doing.</p>
@@ -94,10 +108,10 @@
 <p><em><strong>Series B: Fundamentals of Machine Learning in Chemistry</strong></em></p>
 <p>By thoughtfully completing the exercises in this exercise, you will… <TBD></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="a-fundamentals-of-molecular-simulation">
-<h1>A. Fundamentals of Molecular Simulation<a class="headerlink" href="#a-fundamentals-of-molecular-simulation" title="Permalink to this heading"></a></h1>
+<section id="a-fundamentals-of-molecular-simulation">
+<h2>A. Fundamentals of Molecular Simulation<a class="headerlink" href="#a-fundamentals-of-molecular-simulation" title="Permalink to this heading"></a></h2>
 <section id="task-1-monte-carlo-simulation-of-a-lennard-jones-fluid">
-<h2>Task 1. Monte Carlo Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-1-monte-carlo-simulation-of-a-lennard-jones-fluid" title="Permalink to this heading"></a></h2>
+<h3>Task 1. Monte Carlo Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-1-monte-carlo-simulation-of-a-lennard-jones-fluid" title="Permalink to this heading"></a></h3>
 <p><strong>Objective(s):</strong> the goal of this exercise is to write a code to perform <em>Monte Carlo simulation</em> of a simple Lennard-Jones fluid in three dimensions in the NVT/canonical ensemble ( fixed particle number, volume, and temperature). The data generated by the simulations will be used to perform some linchpin analyses.</p>
 <p><strong>Some details/hints:</strong></p>
 <ul class="simple">
@@ -116,7 +130,7 @@
 <p>d.) Compute and plot pair radial distribution functions for two thermodynamic conditions: one in the gas-phase and the other a liquid. Remark on their characteristics.</p>
 </section>
 <section id="task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid">
-<h2>Task 2. Molecular Dynamics Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid" title="Permalink to this heading"></a></h2>
+<h3>Task 2. Molecular Dynamics Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid" title="Permalink to this heading"></a></h3>
 <p><strong>Objective(s):</strong> the goal of this exercise is to write a code to perform a <em>molecular dynamics simulation</em> of a simple Lennard-Jones fluid in three dimensions. Simulations will be run in both the NVE/microcanonical ensemble (fixed particle number, volume, and energy) as well as a pseudo canonical ensemble. In addition to reproducing some prior analyses, dynamical characterization will be introduced.</p>
 <p><strong>Some details/hints:</strong></p>
 <ul class="simple">
@@ -135,7 +149,7 @@
 <p>e.) Estimate the self-diffusion coefficient of a Lennard-Jones particle in a liquid-phase. You should do this usingYou can do this calculation two ways: <em>(1)</em> by computing the mean-squared displacment and <em>(2)</em> by interating the velocity autocorrelation function. Compare values from the two methods. For this analysis, you should collect statistics during an NVE simulation and perhaps periodically “reset” the temperature to a specific target. Why might it be problematic to compute these quantities in the presence of a thermostat?</p>
 </section>
 <section id="task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software">
-<h2>Task 3. Simulation of a Lennard-Jones Fluid with an MD software<a class="headerlink" href="#task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software" title="Permalink to this heading"></a></h2>
+<h3>Task 3. Simulation of a Lennard-Jones Fluid with an MD software<a class="headerlink" href="#task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software" title="Permalink to this heading"></a></h3>
 <p><strong>Objective(s):</strong> The goal of this exercise is to gain experience with how to work with more advanced MD software. You will essentially reproduce some subset of results from the prior tasks but using your choice of MD software as the engine to generate results.</p>
 <p><strong>Some details/hints:</strong> I would recommend using <a class="reference external" href="https://www.lammps.org/#gsc.tab=0">LAMMPS</a> or maybe <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/v3.5.0/">HOOMD-blue</a>. Think about what you have needed to implement yourself and let that guide what you search for in the documentation.</p>
 <p><strong>Recommended Resource(s)</strong>: Tutorials and documentation pages related to the software.</p>
@@ -144,15 +158,18 @@
 <p>b.) Demonstrate the equivalence of some result from the chosen software with your “in-house” code. What’s the comparison in performance (e.g., timesteps per day) between your code and the chosen software?</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="b-fundamentals-of-machine-learning">
-<h1>B. Fundamentals of Machine Learning<a class="headerlink" href="#b-fundamentals-of-machine-learning" title="Permalink to this heading"></a></h1>
+<section id="b-fundamentals-of-machine-learning">
+<h2>B. Fundamentals of Machine Learning<a class="headerlink" href="#b-fundamentals-of-machine-learning" title="Permalink to this heading"></a></h2>
 <p>To be determined!</p>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../COMPUTING/content.html" class="btn btn-neutral float-left" title="COMPUTING RESOURCES" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
