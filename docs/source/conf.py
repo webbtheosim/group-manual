@@ -55,7 +55,7 @@ html_theme = "sphinx_rtd_theme"
 html_context = {
     "display_github": True,  # Add 'Edit on Github' link instead of 'View page source'
     "github_user": "webbtheosim",
-    "github_repo": "ml-workshop-acsmarm2022",
+    "github_repo": "group-manual",
     "github_version": "main/site/source/",
     "last_updated": True,
     "commit": False,

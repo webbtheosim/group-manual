@@ -8,3 +8,5 @@ TABLE OF CONTENTS
     index.md
     GROUP/content.ipynb
     READING/content.ipynb
+    COMPUTING/content.ipynb
+    EXERCSISES/content.ipynb

@@ -1,4 +1,3 @@
-## OVERVIEW
 
 This documentation provides information and suggestions that should help folks get "up to speed" with the **Webb Theory and Simulation group**.
 The objective is to provide useful guidance and references for current, new, or prospective group members.
