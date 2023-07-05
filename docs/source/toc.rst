@@ -10,3 +10,4 @@ TABLE OF CONTENTS
     READING/content.ipynb
     COMPUTING/content.ipynb
     EXERCISES/content.ipynb
+    COMMUNICATION/WRITING/content.ipynb
