@@ -15,9 +15,9 @@
    "source": [
     "## Overview\n",
     "\n",
-    "Scientific manuscripts are often the most tangible and externally visible manifestation of your research. Writing a good manuscript is hard work, but it is a very useful skill to have. Believe me: delivering clear and concise statements that accurately convey information is broadly useful and widely appreciated in both academic and industrial settings. In addition, Prof. Webb (and by extension, the group) takes pride in producing high-quality, well-written, and attractive manuscripts. At times, it may seem the extra effort is not worth it. Do people notice? If something is great, maybe. If something is bad, definitely. The goal is to effectively communicate the science. This necessitates clear writing. This requires sensible figure composition. Anything less is a distraction. This is important. \n",
+    "Scientific manuscripts are often the most tangible and externally visible manifestation of your research. Writing a good manuscript is hard work, but it is a very useful skill to have. Believe me: delivering clear and concise statements that accurately convey information is broadly useful and widely appreciated in both academic and industrial settings. In addition, Prof. Webb (and by extension, the group) takes pride in producing high-quality, well-written, and attractive manuscripts. At times, it may seem the extra effort is not worth it. Do people notice? If something is great, maybe. If something is bad, definitely. The goal is to effectively communicate the science. This necessitates clear writing and sensible figure composition. Anything less is a distraction. This is important. \n",
     "\n",
-    "The purpose of the following sections is to provide guidance and promote consistency for manuscript preparation and publication. Following the recommendations set forthshould not only reduce the editorial burden on Prof. Webb but also simplify the writing process and result in an overall better product in less time. I recommend all students read this multiple times and revisit as necessary. Over time, you will and should develop your own sense of style and approach to writing, but you should also appreciate that what follows is a distillation of many years of experience of writing and observation. Therefore, this should establish a common baseline for navigationg \"the process\" with useful and actionable approaches to requisite steps therein."
+    "The following sections aim to provide guidance and promote consistency for manuscript preparation and publication. Following the recommendations set forth should not only reduce the editorial burden on Prof. Webb but also simplify the writing process and result in an overall better product in less time. I recommend all students read this multiple times and revisit as necessary. Over time, you will and should develop your own sense of style and approach to writing, but you should also appreciate that what follows is a distillation of many years of experience of writing and observation. Therefore, this should establish a common baseline for navigating \"the process\" with useful and actionable approaches to requisite steps therein."
    ]
   },
   {
@@ -262,7 +262,7 @@
    "id": "267c4c00",
    "metadata": {},
    "source": [
-    "## General Advice and Style Guidelines\n",
+    "## General Advice and Style\n",
     "\n",
     "Here, I want to highlight some key stylistic elements that should make writing and editing easier for us. \n",
     "\n",
