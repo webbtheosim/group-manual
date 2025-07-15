@@ -20,4 +20,4 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 andcommit: html
-	cd $(BUILDDIR)/html; git add.; git commit -m "rebuild"; git push origin gh-pages
+	cd $(BUILDDIR)/html; git add .; git commit -m "rebuild"; git push origin gh-pages
