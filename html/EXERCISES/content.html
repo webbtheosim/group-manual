@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXERCISES &mdash; Webb Group Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scientific Manuscripts" href="../COMMUNICATION/WRITING/content.html" />
+    <link rel="prev" title="COMPUTING RESOURCES" href="../COMPUTING/content.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../toc.html" class="icon icon-home">
+            Webb Group Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">OVERVIEW</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GROUP/content.html">THE GROUP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../READING/content.html">RELEVANT READING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../COMPUTING/content.html">COMPUTING RESOURCES</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EXERCISES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#philosophy">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-fundamentals-of-molecular-simulation">A. Fundamentals of Molecular Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#task-1-monte-carlo-simulation-of-a-lennard-jones-fluid">Task 1. Monte Carlo Simulation of a Lennard-Jones Fluid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid">Task 2. Molecular Dynamics Simulation of a Lennard-Jones Fluid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software">Task 3. Simulation of a Lennard-Jones Fluid with an MD software</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#b-fundamentals-of-machine-learning">B. Fundamentals of Machine Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../COMMUNICATION/WRITING/content.html">Scientific Manuscripts</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../toc.html">Webb Group Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../toc.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EXERCISES</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/webbtheosim/group-manual/blob/main/site/source/EXERCISES/content.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="exercises">
+<h1>EXERCISES<a class="headerlink" href="#exercises" title="Link to this heading"></a></h1>
+<section id="philosophy">
+<h2>Philosophy<a class="headerlink" href="#philosophy" title="Link to this heading"></a></h2>
+<p>All graduate students in the group will be “forced” to engage in a series of exercises related to molecular simulation before really getting started in “real research.” Series A focuses on molecular simulation, and Series B (yet-to-be-developed) focuses on machine learning. The primary purpose of these exercises is to expose students to essential elements in these disciplines and provide a firm foundation to understand literature and pursue research in the area. Interested prospective students may also elect to try out these exercises, prior to joining the group, to gauge interest in computational research (although admittedly, these are not the sexiest of topics!) or to get a headstart in research in the group (by timeshifting these exercises from early spring  after matriculation to sometime in the first semester/winter break).</p>
+<p><strong>Note on implementation</strong>: In terms of programming language, you can use whatever you want. Even if slow, the simulations can be feasibly accomplished using interpreted languages. As a first recommendation, I would probably recommend Python for both series. However, for Series A, it would also be quite reasonable and worthwhile to write some programs in <em>C</em> or <em>FORTRAN</em>, and perhaps you could perform analysis in Python. Using a compiled language forces you to think more about some mechanical aspects of algorithm implementation and coding, in general, that can pay dividends. It is also possible to write some routines in a compiled language to accelerate an overarching Python code. Jupyter notebooks or powerpoint slides are a good way to share your results.</p>
+<p><strong>Note on resources</strong>: Most of these tasks can be found as examples in textbooks or courses, and so it would be very easy to copy the code from a relevant resource. Use whatever resources you want (<strong>FS</strong>, <strong>AT</strong>, <a class="reference external" href="https://sites.engineering.ucsb.edu/~shell/che210d/">Shell course</a>), but in a marked exception from my typical coding hierarchy of importance, in this instance, you <em>must</em> understand what the the code is doing and what the algorithms are doing.</p>
+<p><strong>Note on timing</strong>: These exercises take variably long depending on your prior knowledge and comfort level with the required skills/tools. G1 students also always have other responsibilities and time commitments, but they can still usually find pockets of time here and there to make progress. About a week is as short as I have seen (the exercises are quite similar to those that you would find in a molecular simulation course, and so, in this case, the student could make use of that work). For a person with reasonable programming experience but little exposure to molecular simulation, a few weeks is probably adequate for Series A. If you are starting from scratch with programming, then that extends the timescale a bit. In the grand scheme of things, it should constitute an insignificant period of time.</p>
+<p><strong>Note on brevity/lack of detail</strong>: “It’s all part of the plan.” – The Joker // Without a literal prescription on how to proceed with every detail, you will have to spend more time with references and thinking about the implementation of code/analysis. You will recognize just how many choices go into doing something deceptively simple. <em>My advice:</em> start simple and consider ways that you can benchmark or validate your code as you proceed. For example, once you think you have a working code/method of analysis, you can find a result to reproduce from a textbook/paper using exactly the indicated conditions.</p>
+<p><em><strong>Series A: Fundamentals of Molecular Simulation</strong></em></p>
+<p>By thoughtfully completing the exercises in this exercise, you will</p>
+<ol class="arabic simple">
+<li><p>develop/demonstrate basic programming proficiency. If you possess only limited exposure to programming, then this is the time to learn with dedicated study! We cannot shortchange this. The goal here, however, is proficiency not expertise. This can also be a good opportunity to learn an unfamiliar language or programming paradigm.</p></li>
+<li><p>gain detailed understanding of key algorithms that underlie moleclar simulation. You will also then be able to understand limitations of the algorithms. Fundamental understanding equips you to more readily diagnose issues when they arise.</p></li>
+<li><p>be equipped to make connections between molecular simulation, statistical mechanics, and macroscopic properties.</p></li>
+<li><p>understand common forms of analysis, error estimation, and visualization</p></li>
+</ol>
+<p><em><strong>Series B: Fundamentals of Machine Learning in Chemistry</strong></em></p>
+<p>By thoughtfully completing the exercises in this exercise, you will… <TBD></p>
+</section>
+<section id="a-fundamentals-of-molecular-simulation">
+<h2>A. Fundamentals of Molecular Simulation<a class="headerlink" href="#a-fundamentals-of-molecular-simulation" title="Link to this heading"></a></h2>
+<section id="task-1-monte-carlo-simulation-of-a-lennard-jones-fluid">
+<h3>Task 1. Monte Carlo Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-1-monte-carlo-simulation-of-a-lennard-jones-fluid" title="Link to this heading"></a></h3>
+<p><strong>Objective(s):</strong> the goal of this exercise is to write a code to perform <em>Monte Carlo simulation</em> of a simple Lennard-Jones fluid in three dimensions in the NVT/canonical ensemble ( fixed particle number, volume, and temperature). The data generated by the simulations will be used to perform some linchpin analyses.</p>
+<p><strong>Some details/hints:</strong></p>
+<ul class="simple">
+<li><p>A Lennard-Jones fluid is an archetypal, particle-based model for simple substances. The particles interact via a <a class="reference external" href="https://en.wikipedia.org/wiki/Lennard-Jones_potential">Lennard-Jones</a> (or 12-6) potential. This potential is extensively used in molecular simulation to describe intermolecular interactions.</p></li>
+<li><p>Use cubic, periodic boundary conditions</p></li>
+<li><p>To obtain reasonable results, your systems need not contain more than 256 particles</p></li>
+<li><p>Your code should be flexible enough to allow for specification of the thermodynamic constraints (e.g., density and temperature).</p></li>
+<li><p>Your code should use a cutoff distance for the interactions between two particles. I recommend using a truncate-and-shift approach.</p></li>
+<li><p>Simple, single-particle displacment moves are sufficient. Consider the maximum displacement as a tunable parameter and how this impacts the frequency with which proposed moves are accepted.</p></li>
+</ul>
+<p><strong>Recommended Resource(s)</strong>: <strong>FS</strong></p>
+<p><strong>Target(s)/Questions:</strong></p>
+<p>a.) In Monte Carlo, you typically want moves that are not accepted a fair percentage of the time that they are proposed. A good, initial rule-of-thumb is perhaps 40% of moves should be accepted. Can you make sense of this idea? How does the maximum displacement size affect the “acceptance rate” of proposed MC moves. How do you expect this acceptance rate to change as a function of temperature?</p>
+<p>b.) Estimate a constant-volume heat capacity <span class="math notranslate nohighlight">\(C_v\)</span> when the system is a gas versus a liquid (the representative gas and liquid need not be at coexistence/can be at different temperatures).</p>
+<p>c.) Obtain a numerical equation of state (pressure vs. density) for two isotherms (one above and one below the critical temperature). What does it mean for a system to exhibit negative pressure? Write a function to output the coordinates of particles in your system (if you haven’t already) and create visualizations of your systems for a few representative state points using a visualization software.</p>
+<p>d.) Compute and plot pair radial distribution functions for two thermodynamic conditions: one in the gas-phase and the other a liquid. Remark on their characteristics.</p>
+</section>
+<section id="task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid">
+<h3>Task 2. Molecular Dynamics Simulation of a Lennard-Jones Fluid<a class="headerlink" href="#task-2-molecular-dynamics-simulation-of-a-lennard-jones-fluid" title="Link to this heading"></a></h3>
+<p><strong>Objective(s):</strong> the goal of this exercise is to write a code to perform a <em>molecular dynamics simulation</em> of a simple Lennard-Jones fluid in three dimensions. Simulations will be run in both the NVE/microcanonical ensemble (fixed particle number, volume, and energy) as well as a pseudo canonical ensemble. In addition to reproducing some prior analyses, dynamical characterization will be introduced.</p>
+<p><strong>Some details/hints:</strong></p>
+<ul class="simple">
+<li><p>You can generate your MD code by modification of your MC code with pretty modest modifications.</p></li>
+<li><p>I would recommend time integration by the velocity-Verlet scheme (yielding positions and velocities at the same time points)</p></li>
+<li><p>Improved statistical convergence of per-particle quantities can be facilitated by exploiting the fact distinct particles are nominally independent. When considering time-dependent quantities, note that <span class="math notranslate nohighlight">\(t =0 \)</span> is arbitrary, and you can have many effectively uncorrelated samples for a given <span class="math notranslate nohighlight">\(\Delta t\)</span> from within the same trajectory.</p></li>
+<li><p>Pay special attention to the handling of periodic boundaries.</p></li>
+<li><p>If your particle coordinates are always <em>in</em> the confines of your defined periodic simulation cell, note that you can reconstruct a particle trajectory by summation of displacements between sampled frames (so long as the sampling frequency is confidently less than the time for a particle to diffuse half the box length).</p></li>
+</ul>
+<p><strong>Recommended Resource(s)</strong>: <strong>FS</strong> or <strong>AT</strong></p>
+<p><strong>Target(s)/Questions:</strong></p>
+<p>a.) Begin by implementing vanilla MD, which should correspond to simulation in the NVE ensemble. Why?</p>
+<p>b.) What physically sets the timestep for numerical integration of the equations of motion? What practically determines its value? Demonstrate how the timestep affects the simulation by monitoring the total energy as a function of time for different timesteps.</p>
+<p>c.) Running an NVE simulation, determine the average temperature of the system. Also, create probability distributions/histograms of the particle velocity/speed distributions. How does this compare to kinetic theory?</p>
+<p>d.) Modify your MD code now to use a simple thermostat. I am going to recommend implementation of an Andersen thermostat. Confirm that your simulation possesses the target temperature. Demonstrate the statistical equivalence of using MC vs. MD by comparing some set of results you obtained previously with MC with results obtained using MD at the same set of conditions.</p>
+<p>e.) Estimate the self-diffusion coefficient of a Lennard-Jones particle in a liquid-phase. You should do this usingYou can do this calculation two ways: <em>(1)</em> by computing the mean-squared displacment and <em>(2)</em> by interating the velocity autocorrelation function. Compare values from the two methods. For this analysis, you should collect statistics during an NVE simulation and perhaps periodically “reset” the temperature to a specific target. Why might it be problematic to compute these quantities in the presence of a thermostat?</p>
+</section>
+<section id="task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software">
+<h3>Task 3. Simulation of a Lennard-Jones Fluid with an MD software<a class="headerlink" href="#task-3-simulation-of-a-lennard-jones-fluid-with-an-md-software" title="Link to this heading"></a></h3>
+<p><strong>Objective(s):</strong> The goal of this exercise is to gain experience with how to work with more advanced MD software. You will essentially reproduce some subset of results from the prior tasks but using your choice of MD software as the engine to generate results.</p>
+<p><strong>Some details/hints:</strong> I would recommend using <a class="reference external" href="https://www.lammps.org/#gsc.tab=0">LAMMPS</a> or maybe <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/v3.5.0/">HOOMD-blue</a>. Think about what you have needed to implement yourself and let that guide what you search for in the documentation.</p>
+<p><strong>Recommended Resource(s)</strong>: Tutorials and documentation pages related to the software.</p>
+<p><strong>Target(s)/Questions:</strong></p>
+<p>a.) Develop an input file that should drive your simulation. Each command accomplishes something. Annotate/comment how these commands manifested (or not) in the code that you wrote yourself.</p>
+<p>b.) Demonstrate the equivalence of some result from the chosen software with your “in-house” code. What’s the comparison in performance (e.g., timesteps per day) between your code and the chosen software?</p>
+</section>
+</section>
+<section id="b-fundamentals-of-machine-learning">
+<h2>B. Fundamentals of Machine Learning<a class="headerlink" href="#b-fundamentals-of-machine-learning" title="Link to this heading"></a></h2>
+<p>To be determined!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../COMPUTING/content.html" class="btn btn-neutral float-left" title="COMPUTING RESOURCES" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../COMMUNICATION/WRITING/content.html" class="btn btn-neutral float-right" title="Scientific Manuscripts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Michael A. Webb.
+      <span class="lastupdated">Last updated on True.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

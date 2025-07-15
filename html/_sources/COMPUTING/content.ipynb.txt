@@ -1,0 +1,157 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "a8ac5d64",
+   "metadata": {},
+   "source": [
+    "# COMPUTING RESOURCES"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "146f0df8",
+   "metadata": {},
+   "source": [
+    "## Overview\n",
+    "\n",
+    "As a computational group, office and computing resources are naturally very important for us. Therefore, it is important to me that you *(i)* have a comfortable, ergonomic working environment and *(ii)* have adequate resources for your project.\n",
+    "Both are essential to conducting research effectively and efficiently. If either are not true, then please do not hesitate to discuss with me.\n",
+    "\n",
+    "## Local Workstation\n",
+    "\n",
+    "If you are a graduate student or postdoctoral researcher, we will dicuss a preferred local computing setup for work in the office. Depending on what the researcher wants to do, this amounts to purchasing a new local workstation, laptop, or set of peripherals (e.g., monitors, keyboards, trackpads).\n",
+    "In addition to using the workstation for all standard personal computing needs, the workstations are used for interfacing with other computational resources and for running/testing small calculations. We do not expect these machines to be able to handle large simulations, but you might find them useful for analysis, preparing graphics, training ML models, coding, etc. We may also maintain group machines that will be dedicated to running software that have single-machine licenses, churning out small calculations, or rendering graphics.Your local computer must be reasonable enough to run standard software, perform code testing, and perhaps some analysis/machine learning. I strongly recommend that your local work computer (whether it be a laptop + external monitor or a desktop) be a Mac or run Linux. \n",
+    "\n",
+    "There are a variety of existing workstations/external monitors that may be suitable for use by grad students/postdocs/undergrads as desired and available. If you think you need something, let me know.\n",
+    "\n",
+    "## Princeton Research Computing\n",
+    "\n",
+    "Our research is principally performed on systems maintained by [Princeton Research Computing](https://researchcomputing.princeton.edu/) (PRC). PRC follows a community resource model. This means our group does not \"own\" a specific cluster or even a fraction of a specific cluster. Instead, systems are acquired through aggregate purchases by several groups or organizations on campus. Because many partiues participate in the acquisition, the machines are usually larger, and this manifests in better pricing. In addition, the university itself is also very supportive of computational research and will often cost-share in the acquisition of new, state-of-the-art resources, should the community demonstrate sufficient need. Consequently, virtually anyone at Princeton can obtain an account and utilize the computing systems; however, groups that finanacially contribute to an acquisition receive [priority](https://researchcomputing.princeton.edu/support/knowledge-base/job-priority) for their calculations via a fairshare system. In any case, the computing resources and staff support at Princeton are excellent and have so far met our computational needs. We will routinely contribute to new systems when the opportunities arise. \n",
+    "\n",
+    "### Onboarding\n",
+    "\n",
+    "When you join the group, Prof. Webb will first request your access to relevant computing and file systems for the group. Once you have an account, you can proceed with the following tasks. Your specific objectives are to *(i)* capably log into and navigate an intended machine/cluster, *(ii)* understand when and how to properly utilize the Slurm scheduler, and *(iii)* abide by and understand cluster etiquette.\n",
+    "\n",
+    "1. Read the [Guide to Princeton's Research Computing Clusters](https://researchcomputing.princeton.edu/get-started/guide-princeton-clusters) and work through the exercises. \n",
+    "2. Read the [Mistakes to Avoid](https://researchcomputing.princeton.edu/get-started/mistakes-avoid). Then, generally avoid those mistakes. There are *some* exceptions, which we will try to touch on elsewhere, but by in large, follow the rules.\n",
+    "3. Make note of various [Workshops](https://researchcomputing.princeton.edu/learn/workshops-live-training) and either attend such workshops or review the materials from any [archived sessions](https://researchcomputing.princeton.edu/learn/workshops-live-training/archives-past-workshops)\n",
+    "4. Review our own group video Tutorials on cluster usage. \n",
+    "\n",
+    "### Computing Systems\n",
+    "\n",
+    "We predominantly use the following systems:\n",
+    "* **[Stellar](https://researchcomputing.princeton.edu/systems/stellar)**: *296 Intel Quad Cascade Lake nodes (96-cores/node); 6 GPU Nodes (AMD Rome + 2 NVIDIDA A100 GPUs / node); 187 AMD Rome nodes (128-cores/node)* - this is our major workhorse cluster. The cluster is relatively exclusive by comparison to some of the other Princeton clusters, and we have good priority access based on financial contributions. The size of nodes are well-suited for the majority of our calculations.  \n",
+    "* **[TigerCPU](https://researchcomputing.princeton.edu/systems/tiger)**: *408 Intel Skylake nodes (40-cores/node)* - this is an older machine/architecture compared to Stellar. In case you are running into job limits on Stellar, it may be reasonable to consider sending some jobs here. However, TigerCPU has an overall larger user base than Stellar, which can mean that queue times may be longer. \n",
+    "* **[TigerGPU](https://researchcomputing.princeton.edu/systems/tiger)**: *80 Intel Broadwell nodes (28-cores/node + 4 NVIDIA P100 GPUs/node)* - Technically, this is not a distinct cluster from TigerCPU; they both comprise Tiger. On the other hand, this portion has different Intel nodes and GPUs. A lot of our calculations/software can use GPUs pretty effectively. TigerGPU itself is often underutilized, and so if your application can use GPUs, you should definitely consider sending some jobs here.\n",
+    "* **[Della](https://researchcomputing.princeton.edu/systems/della)**: This is a highly heterogeneous cluster. It is not commonly used in the group, but it should be on your radar.\n",
+    "\n",
+    "**Note:** One thing to be aware of is that all of the machines, except for Della, are moreso intended for large-scale parallel jobs rather than (many) small/serial jobs. Yet, we often have the need for the latter. To do so, we play games with job packaging/bundling/deployment to work within the constraints provided by the scheduler and the overall specifications/etiquette on the cluster. \n",
+    "\n",
+    "**Note:** If you are ever uncertain about whether doing something on the cluster is OK, and you cannot easily find the answer, ***ask*** me or someone else in the group first.\n",
+    "\n",
+    "### File Systems/Storage\n",
+    "\n",
+    "To use the clusters most effectively, it is advantageous to understand the purpose of the various filesystems. Please read the overview  [here](https://researchcomputing.princeton.edu/support/knowledge-base/data-storage). We have a lot of storage where it is important. If we are running into storage issues, please bring it up at a group meeting so that we can discuss. If there is an actual good reason to have as much data, then we can request a quota increase, and PRC is generous with us in this regard. However, I do not want to request increases just because we are generating data unnecessarily. \n",
+    "\n",
+    "* /home/ - this is pretty much just for your compiled software executables, analysis scripts, and other lightweight stuff (shell scripts, etc.)\n",
+    "* /projects/WEBB - you will be given access to this directory when you join the group. This is predominantly for long-term storage of data and metadata or files that do not change over time. Files can be shared amongst group members here. We have access to 10's of TB of space, but you should be mindful of what you are putting here. It is not good practice to run any job with heavy I/O from /projects/ since that file system is decoupled from the clusters. For this, you should prefer running your jobs from /scratch/gpfs and moving the results as necessary.\n",
+    "* /scratch/gpfs/<YourNetID> - each cluster is equipped with a proximate, parallel filesystem. PRC really wants you to only run jobs and output results to /scratch. The caveat is that /scratch is *not* backed up. It is not necessarily cleaned out (this happens on some other clusters I have worked on), but it is not backed up. \n",
+    "* /tmp - if your job for some reason needs really fast I/O, then /tmp accesses a local scratch space on each compute node. This might be the case if you are writing two-electron integral files during an electronic structure calculation. It is pretty rare that we need this, but it exists.\n",
+    "\n",
+    "**Other storage available**:\n",
+    "* physical external hard drives - for archival purposes, we can move data to some of these if needed. \n",
+    "* Dropbox - check out the discussion of our Dropbox folder\n",
+    "\n",
+    "*Tip*: I do not like to clutter scratch. Also, if you are making use of multiple clusters for the same project, then the /scratch directories are different and specific to each. What I will do then is handle everything related to /scratch in the Slurm batch script; an example is shown below. This may not be a good idea, however, if the files that you are working with are very big and would take significant time to transfer. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "78ed015f",
+   "metadata": {},
+   "source": [
+    "```bash\n",
+    "#SBATCH --job-name=my_job        # create a short name for your job\n",
+    "#SBATCH --nodes=1                # node count\n",
+    "#SBATCH --ntasks-per-node=16     # total number of tasks across all nodes\n",
+    "#SBATCH --cpus-per-task=1        # cpu-cores per task (>1 if multi-threaded tasks)\n",
+    "#SBATCH --mem-per-cpu=4G         # memory per cpu-core (4G is default)\n",
+    "#SBATCH --time=00:29:00          # total run time limit (HH:MM:SS)\n",
+    "#SBATCH --output=output\n",
+    "#SBATCH --error=error\n",
+    "\n",
+    "# LOAD NECESSARY MODULES/ENVIRONMENTS\n",
+    "module load intel/19.1/64/19.1.1.217\n",
+    "module load intel-mpi/intel/2019.7/64\n",
+    "module load anaconda\n",
+    "conda activate chem-env\n",
+    "\n",
+    "# SET UP JOB\n",
+    "runDIR=\"$SLURM_SUBMIT_DIR\"\n",
+    "echo \"Submitting from $runDIR\"\n",
+    "\n",
+    "# MOVE TO SCRATCH\n",
+    "cd /scratch/gpfs/mawebb\n",
+    "mkdir ${SLURM_JOB_ID}\n",
+    "cd ${SLURM_JOB_ID}\n",
+    "\n",
+    "# MOVE FILES TO SCRATCH\n",
+    "mv $runDIR/my_inputs* .\n",
+    "\n",
+    "# RUN JOB\n",
+    "<some_executable> ... \n",
+    "\n",
+    "mv ./* $runDIR/.\n",
+    "cd ..\n",
+    "rm -r ${SLURM_JOB_ID}\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0bb3eb49",
+   "metadata": {},
+   "source": [
+    "## External Computing\n",
+    "\n",
+    "If we expect or you empirically find that your research will be constrained or limited by access to PRC only, then we should discuss applying for computing time elsewhere. The following is a list of possible resources:\n",
+    "\n",
+    "* Microsoft Azure Cloud Computing - We have dabbled with this. If you are interested, there are frequently opportunities to secure \\$10k+ in credits relatively easily.\n",
+    "* [Argonne Leadership Computing Facility (ALCF)](https://www.alcf.anl.gov/) \n",
+    "* [Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support](https://access-ci.org/)\n",
+    "* [National Energy Research Scientific Computing Center](https://www.nersc.gov/)\n",
+    "* [Oak Ridge Leadership Computing Facility](https://www.olcf.ornl.gov/)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3a84c89b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
